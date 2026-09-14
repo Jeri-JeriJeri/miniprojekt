@@ -103,14 +103,20 @@ main section p {
 /* ============================================
    BILDER
    ============================================ */
+.lummelunda-flexbox, .stora-karslo-flexbox {
+    display: flex;
+    gap: 2rem;
+
+}
 
 .lummelunda-foto,
 .stora-karslo-foto {
-  width: 100%;
+  width: 40vw;
   max-width: 750px;
-  height: 350px;
+  height: 50vh;
   object-fit: cover;
   margin-top: 1rem;
+  border: 1px solid black;
 }
 
 /* ============================================
