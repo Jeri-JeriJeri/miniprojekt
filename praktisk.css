@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #FAF0CA;
+    color: #0D3B66;
+}
+
+h1 {
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    justify-self: center;
+}
+nav a {
+    padding: 12px;
+}
+a {
+    color: #31587C;
+    
+}
+a:hover {
+    text-decoration: underline overline;
+}
+
