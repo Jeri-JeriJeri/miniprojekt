@@ -129,7 +129,6 @@ img {
 .intro {
   display: flex;
   /* text och bild hamnar sida vid sida */
-  gap: 2rem;
   align-items: center;
   /* centrerar dem lodrätt mot varandra */
   max-width: 1100px;
@@ -145,7 +144,7 @@ img {
 .best-time {
   display: flex;
   /* text och bild hamnar sida vid sida */
-  gap: 2rem;
+
   align-items: center;
   /* centrerar dem lodrätt mot varandra */
   max-width: 1100px;
