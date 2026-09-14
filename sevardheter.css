@@ -71,4 +71,18 @@ img {
   /* kanten blir synlig vid hover */
 }
 
+.lummelunda-flexbox, .stora-karslo-flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 2px;
+}
+.lummelunda-foto, .stora-karslo-foto {
+    width: 40vw;
+    height: 50vh;
+    border: 1px solid black;
+}
+
+
 /* HERO (stor bild högst upp med text ovanpå) */
