@@ -2,12 +2,11 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #53504C;
+    background-color: #FAF0CA;
 }
 
-h1, footer {
+h1{
     text-align: center;
-    color: white;
 }
 label, button {
     display: block;
@@ -19,16 +18,17 @@ label, button {
     justify-content: center;
     align-items: center;
     line-height: 1.6;
-    background-color: #403D39;
+    background-color: #0D3B66;
     border: 1px solid black;
     border-radius: 4px;
     width: 40vw;
     height: 60vh;
-    color:white;
+    color: white;
 }
 input, textarea, select, button {
-    background: #797774;
+    background: #FAF0CA;
 }
+
 input:focus, textarea:focus, select:focus, button:focus {
     
     background: #B2B1AF;
