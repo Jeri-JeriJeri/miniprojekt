@@ -4,7 +4,6 @@
 
 body {
   margin: 0;
-  /* tar bort webbläsarens standardmarginal */
   font-family: sans-serif;
   color: #232323;
   background: #f1eee4;
@@ -17,7 +16,6 @@ h3 {
   font-weight: 600;
   line-height: 1.15;
   margin: 0 0 8px;
-  /* bara marginal under rubriken, inget ovanför */
 }
 
 a {
@@ -31,14 +29,13 @@ a:focus-visible {
 
 img {
   max-width: 100%;
-  /* bilden blir aldrig bredare än sin behållare */
   display: block;
-  /* tar bort det lilla osynliga mellanrummet
-                         under bilder som img annars har som standard */
   border-radius: 4px;
 }
 
-/* HEADER / NAV */
+/* ============================================
+   HEADER / NAV
+   ============================================ */
 
 .header {
   background: #1f3a44;
@@ -47,12 +44,8 @@ img {
 
 .nav ul {
   list-style: none;
-  /* tar bort punkterna framför listan */
   display: flex;
-  /* lägger listans <li> bredvid varandra istället
-                          för under varandra */
   gap: 1.5rem;
-  /* mellanrum mellan länkarna */
   margin: 0;
   padding: 0;
 }
@@ -60,15 +53,116 @@ img {
 .nav a {
   color: #f1eee4;
   text-decoration: none;
-  /* tar bort understrykningen på länken */
   padding: 0.25rem 0;
   border-bottom: 2px solid transparent;
-  /* osynlig kant, förberedd för hover */
 }
 
 .nav a:hover {
   border-bottom-color: #c08a4e;
-  /* kanten blir synlig vid hover */
 }
 
-/* HERO (stor bild högst upp med text ovanpå) */
+/* ============================================
+   HUVUDINNEHÅLL
+   ============================================ */
+
+main {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+main > h1 {
+  margin-bottom: 2.5rem;
+}
+
+/* Varje sevärdhet */
+
+main section {
+  margin-bottom: 4rem;
+}
+
+/* Rubriker */
+
+main section h2 {
+  color: #1f3a44;
+  margin-bottom: 1rem;
+}
+
+main section h3 {
+  color: #1f3a44;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Text */
+
+main section p {
+  max-width: 750px;
+}
+
+/* ============================================
+   BILDER
+   ============================================ */
+
+.lummelunda-foto,
+.stora-karslo-foto {
+  width: 100%;
+  max-width: 750px;
+  height: 350px;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.site-footer {
+  background: #1f3a44;
+  color: #f1eee4;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.site-footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.site-footer a {
+  color: #f1eee4;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   RESPONSIVITET
+   ============================================ */
+
+@media (max-width: 700px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  main {
+    margin: 2rem auto;
+  }
+
+  main section {
+    margin-bottom: 3rem;
+  }
+
+  .lummelunda-foto,
+  .stora-karslo-foto {
+    height: auto;
+  }
+}
