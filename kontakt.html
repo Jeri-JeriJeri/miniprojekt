@@ -1,55 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="sv" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt Oss</title>
-    <link rel="stylesheet" href="kontakt.css">
-</head>
-<body>
+    <link rel="stylesheet" href="kontakt.css" />
+  </head>
+  <body>
     <header>
-        <h1> Kontakta oss</h1>
+      <h1>Kontakta oss</h1>
 
-        <nav>
-            <a href="index.html">Hem</a>
-            <a href="praktisk.html">Praktisk</a>
-            <a href="sevardheter.html">Sevärdheter</a>
-        </nav>
+      <nav>
+        <a href="index.html">Hem</a>
+        <a href="praktisk.html">Praktisk</a>
+        <a href="sevardheter.html">Sevärdheter</a>
+      </nav>
     </header>
     <main>
-        <div class="container">
+      <div class="container">
+        <form action="#" method="post">
+          <label for="namn">Skriv Ditt Namn</label>
+          <input
+            type="text"
+            id="namn"
+            name="namn"
+            placeholder="Ditt Namn"
+            required
+          />
 
-            <form action="#" method="post">
-                <label for="namn">Skriv Ditt Namn</label>
-                <input type="text" id="namn" name="namn" placeholder="Ditt Namn" required >
-                
-                <label for="epost">Skriv Ditt E-post</label>
-                <input type="email" name="epost" id="epost" placeholder="exempel@gmail.com" required >
-                
-                <label for="resdatum" required >När ska du resa?</label>
-                <input type="date" name="resdatum" id="resdatum" required>
-                
-                <label for="antalpers">Hur många personer?</label>
-                <select name="antalpers" id="antalpers" required>
-                    <option value="">Välj</option>
-                    <option value="2pers">1-2</option>
-                    <option value="4pers">2-4</option>
-                    <option value="max">4+</option>
-                </select>
-                <label for="fraga">Vad vill du fråga</label>
-                <textarea name="fraga" id="fraga" placeholder="Min fråga är..." required></textarea>
-                
-                <button type="submit"> Skicka</button>
+          <label for="epost">Skriv Ditt E-post</label>
+          <input
+            type="email"
+            name="epost"
+            id="epost"
+            placeholder="exempel@gmail.com"
+            required
+          />
 
-            </form>
-        </div>
+          <label for="resdatum" required>När ska du resa?</label>
+          <input type="date" name="resdatum" id="resdatum" required />
 
+          <label for="antalpers">Hur många personer?</label>
+          <select name="antalpers" id="antalpers" required>
+            <option value="">Välj</option>
+            <option value="2pers">1-2</option>
+            <option value="4pers">2-4</option>
+            <option value="max">4+</option>
+          </select>
+          <label for="fraga">Vad vill du fråga</label>
+          <textarea
+            name="fraga"
+            id="fraga"
+            placeholder="Min fråga är..."
+            required
+          ></textarea>
+
+          <button type="submit">Skicka</button>
+        </form>
+      </div>
     </main>
 
     <footer>
-        <p>
-            &copy; 2026
-        </p>
+      <p>&copy; 2026</p>
     </footer>
-</body>
+  </body>
 </html>
