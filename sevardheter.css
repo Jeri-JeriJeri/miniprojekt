@@ -103,10 +103,30 @@ main section p {
 /* ============================================
    BILDER
    ============================================ */
-.lummelunda-flexbox, .stora-karslo-flexbox {
-    display: flex;
-    gap: 2rem;
 
+/* Robins sevärdheter */
+
+.sevardhet-flexbox {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sevardhet-foto {
+  width: 100%;
+  max-width: 750px;
+  height: 50vh;
+  object-fit: cover;
+  margin-top: 1rem;
+  border: 1px solid black;
+}
+
+/* Gruppkamraternas kod */
+
+.lummelunda-flexbox,
+.stora-karslo-flexbox {
+  display: flex;
+  gap: 2rem;
 }
 
 .lummelunda-foto,
@@ -166,6 +186,15 @@ main section p {
   main section {
     margin-bottom: 3rem;
   }
+
+  /* Mina sevärdhetsbilder */
+
+  .sevardhet-foto {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Gruppkamraternas kod */
 
   .lummelunda-foto,
   .stora-karslo-foto {
