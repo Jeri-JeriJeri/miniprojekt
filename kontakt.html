@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt Oss</title>
+    <link rel="stylesheet" href="kontakt.css">
+</head>
+<body>
+    <header>
+        <h1> Kontakta oss</h1>
+
+    </header>
+    <main>
+        <div class="container">
+
+            <form action="#" method="post">
+                <label for="namn">Skriv Ditt Namn</label>
+                <input type="text" id="namn" name="namn" placeholder="Ditt Namn" required >
+                
+                <label for="epost">Skriv Ditt E-post</label>
+                <input type="email" name="epost" id="epost" placeholder="exempel@gmail.com" required >
+                
+                <label for="resdatum" required >När ska du resa?</label>
+                <input type="date" name="resdatum" id="resdatum" required>
+                
+                <label for="antalpers">Hur många personer?</label>
+                <select name="antalpers" id="antalpers" required>
+                    <option value="">Välj</option>
+                    <option value="2pers">1-2</option>
+                    <option value="4pers">2-4</option>
+                    <option value="max">4+</option>
+                </select>
+                <label for="fraga">Vad vill du fråga</label>
+                <textarea name="fraga" id="fraga" placeholder="Min fråga är..." required></textarea>
+                
+                <button type="submit"> Skicka</button>
+
+            </form>
+        </div>
+
+    </main>
+
+    <!-- <footer>
+        <p>&copy;</p>
+
+    </footer> -->
+</body>
+</html>
