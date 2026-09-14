@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* tar bort webbläsarens standardmarginal */
+    font-family: sans-serif;
+    color: #232323;
+    background: #F1EEE4;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    line-height: 1.15;
+    margin: 0 0 8px;
+    /* bara marginal under rubriken, inget ovanför */
+}
+
+a {
+    color: #1F3A44;
+}
+
+a:focus-visible {
+    outline: 3px solid #C08A4E;
+    outline-offset: 3px;
+}
+
+img {
+    max-width: 100%;
+    /* bilden blir aldrig bredare än sin behållare */
+    display: block;
+    /* tar bort det lilla osynliga mellanrummet
+                         under bilder som img annars har som standard */
+    border-radius: 4px;
+}
+
+
+/* HEADER / NAV */
+
+.header {
+    background: #1F3A44;
+    padding: 1rem 1.5rem;
+}
+
+.nav ul {
+    list-style: none;
+    /* tar bort punkterna framför listan */
+    display: flex;
+    /* lägger listans <li> bredvid varandra istället
+                          för under varandra */
+    gap: 1.5rem;
+    /* mellanrum mellan länkarna */
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    color: #F1EEE4;
+    text-decoration: none;
+    /* tar bort understrykningen på länken */
+    padding: 0.25rem 0;
+    border-bottom: 2px solid transparent;
+    /* osynlig kant, förberedd för hover */
+}
+
+.nav a:hover {
+    border-bottom-color: #C08A4E;
+    /* kanten blir synlig vid hover */
+}
+
+
+/* HERO (stor bild högst upp med text ovanpå) */
+
+.hero {
+    /* position: relative gör att vi kan placera .hero-text
+     ovanpå bilden med position: absolute nedan */
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 60vh;
+    /* 60% av skärmhöjden */
+    min-height: 320px;
+    /* men aldrig lägre än så här */
+    object-fit: cover;
+    /* fyller ytan utan att bilden blir skev */
+    border-radius: 0;
+}
+
+.hero-text {
+    position: absolute;
+    /* lägger texten ovanpå bilden */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 1.5rem;
+    color: #F1EEE4;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+}
+
+.hero-text p {
+    max-width: 500px;
+    /* så att texten inte blir en superbred, svårläst rad */
+}
+
+.button {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.65rem 1.4rem;
+    background: #C08A4E;
+    color: #232323;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.button:hover {
+    background: #A97A44;
+    /* lite mörkare vid hover */
+}
+
+
+/* INTRO (text bredvid bild) */
+
+.intro {
+    display: flex;
+    /* text och bild hamnar sida vid sida */
+    gap: 2rem;
+    align-items: center;
+    /* centrerar dem lodrätt mot varandra */
+    max-width: 1100px;
+    margin: 3rem auto;
+    /* auto = centrerar hela blocket horisontellt */
+    padding: 0 1.5rem;
+    flex-wrap: wrap;
+    /* tillåter radbrytning på smal skärm */
+}
+
+/* BEST-TIME (vanlig textsektion) */
+
+.best-time {
+    max-width: 600px;
+    /* håller texten smal och lätt att läsa */
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+
+/* TEASER-GRID (de tre korten längst ner) */
+
+.teaser-grid {
+    display: grid;
+    /* skapar ett rutnät */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 lika breda kolumner */
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.teaser {
+    text-decoration: none;
+    color: #232323;
+    background: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+    /* klipper bort det som sticker ut,
+                                  t.ex. bildens hörn utanför rundningen */
+    transition: transform 0.15s ease;
+    /* gör hover-rörelsen mjuk istället för hackig */
+}
+
+.teaser:hover {
+    transform: translateY(-4px);
+    /* kortet flyttar sig 4px uppåt vid hover */
+}
+
+.teaser img {
+    border-radius: 0;
+}
+
+.teaser h3,
+.teaser p {
+    padding: 0 1rem;
+}
+
+.teaser h3 {
+    margin-top: 0.75rem;
+}
+
+.teaser p {
+    margin-bottom: 1rem;
+    color: #6E6C63;
+}
+
+
+/* FOOTER */
+
+.site-footer {
+    background: #1F3A44;
+    color: #F1EEE4;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.site-footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* centrerar länkarna i mitten */
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0 0 1rem;
+}
+
+.site-footer a {
+    color: #F1EEE4;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* ============================================
+   RESPONSIVITET
+   Allt ovanför gäller alltid. Reglerna här gäller
+   BARA när skärmen är 700px bred eller smalare,
+   och skriver då över det som redan är satt.
+   ============================================ */
+
+@media (max-width: 700px) {
+
+    .nav ul {
+        flex-direction: column;
+        /* länkarna hamnar under varandra istället */
+        gap: 0.5rem;
+    }
+
+    .intro {
+        flex-direction: column;
+        /* text och bild hamnar under varandra */
+    }
+
+    .teaser-grid {
+        grid-template-columns: 1fr;
+        /* en kolumn istället för tre */
+    }
+
+}
