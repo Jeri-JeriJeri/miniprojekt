@@ -187,6 +187,8 @@ img {
 
 .teaser img {
   border-radius: 0;
+  height: 20vh;
+  width: 100vw;
 }
 
 .teaser h3,
@@ -241,8 +243,9 @@ img {
 @media (max-width: 700px) {
   .nav ul {
     flex-direction: column;
+    align-items: center;
     /* länkarna hamnar under varandra istället */
-    gap: 0.5rem;
+    gap: 0.4rem;
   }
 
   .intro {
