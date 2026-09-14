@@ -1,15 +1,40 @@
 * {
     box-sizing: border-box;
 }
-h1 {
-    text-align: center;
+body {
+    background-color: #53504C;
 }
-label {
+
+h1, footer {
+    text-align: center;
+    color: white;
+}
+label, button {
     display: block;
 }
+
 .container {
     display: flex;
+    justify-self: center;
     justify-content: center;
     align-items: center;
     line-height: 1.6;
+    background-color: #403D39;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 40vw;
+    height: 60vh;
+    color:white;
+}
+input, textarea, select, button {
+    background: #797774;
+}
+input:focus, textarea:focus, select:focus, button:focus {
+    
+    background: #B2B1AF;
+}
+
+footer p {
+    position: absolute;
+    bottom: 0;
 }
