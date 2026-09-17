@@ -185,13 +185,25 @@ main section p {
     margin-bottom: 3rem;
   }
 
+  /* Mina sevärdhetsbilder */
+
+  /*
   .sevardhet-foto {
     width: 100%;
     height: auto;
-  }
+  } */
+   .sevardhet-foto {
+    width: 50%;
+   }
+   #sundre-foto {
+    width: 80%;
+   }
 
+  /* Gruppkamraternas kod */
+
+  /* .
   .lummelunda-foto,
   .stora-karslo-foto {
     height: auto;
-  }
+  } */
 }
