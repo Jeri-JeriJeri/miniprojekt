@@ -40,6 +40,8 @@ img {
 .header {
   background: #1f3a44;
   padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
 }
 
 .nav ul {
