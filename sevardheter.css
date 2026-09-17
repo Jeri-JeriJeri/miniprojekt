@@ -106,8 +106,6 @@ main section p {
    BILDER
    ============================================ */
 
-/* Robins sevärdheter */
-
 .sevardhet-flexbox {
   display: flex;
   justify-content: center;
@@ -122,8 +120,6 @@ main section p {
   margin-top: 1rem;
   border: 1px solid black;
 }
-
-/* Gruppkamraternas kod */
 
 .lummelunda-flexbox,
 .stora-karslo-flexbox {
@@ -191,7 +187,8 @@ main section p {
 
   /* Mina sevärdhetsbilder */
 
-  /* .sevardhet-foto {
+  /*
+  .sevardhet-foto {
     width: 100%;
     height: auto;
   } */
@@ -204,7 +201,8 @@ main section p {
 
   /* Gruppkamraternas kod */
 
-  /* .lummelunda-foto,
+  /* .
+  .lummelunda-foto,
   .stora-karslo-foto {
     height: auto;
   } */
