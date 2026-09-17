@@ -2,8 +2,8 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #FAF0CA;
-    color: #0D3B66;
+    background-color: #f1eee4;
+    color: #232323;
 }
 
 h1 {
@@ -20,8 +20,7 @@ nav a {
     padding: 12px;
 }
 a {
-    color: #31587C;
-    text-decoration: none;
+    text-decoration: dashed;
     
 }
 a:hover {

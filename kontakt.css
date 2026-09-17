@@ -2,8 +2,8 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #FAF0CA;
-    color: #0D3B66;
+    background-color: #f1eee4; 
+    color: #232323;
 }
 
 h1{
@@ -32,15 +32,15 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     line-height: 1.6;
-    background-color: #0D3B66;
+    background-color: #e0d9c2;
     border: 1px solid black;
     border-radius: 4px;
     width: 40vw;
     height: 60vh;
-    color: white;
+    
 }
 input, textarea, select, button {
-    background: #FAF0CA;
+    background: #f1eee4;
 }
 
 input:focus, textarea:focus, select:focus, button:focus {
