@@ -63,12 +63,37 @@ img {
   border-bottom-color: #c08a4e;
 }
 
-/* ============================================
-   HUVUDINNEHÅLL
-   ============================================ */
-
 main {
   max-width: 1100px;
-  margin: 3rem auto;
-  padding: 0 1.5rem;
+  margin: 20px 20px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.site-footer {
+  background: #1f3a44;
+  color: #f1eee4;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.site-footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  /* centrerar länkarna i mitten */
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.site-footer a {
+  color: #f1eee4;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
 }
