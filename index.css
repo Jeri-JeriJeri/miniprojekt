@@ -254,7 +254,9 @@ img {
   }
 
   .teaser-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
     /* en kolumn istället för tre */
-  }
+}
+
 }
