@@ -3,6 +3,7 @@
 }
 body {
     background-color: #FAF0CA;
+    color: #0D3B66;
 }
 
 h1{
@@ -16,8 +17,13 @@ nav {
     
 }
 nav a {
-    color: black;
+    
     padding: 8px;
+    text-decoration: none;
+
+}
+nav a:hover {
+    text-decoration: underline;
 }
 
 .container {

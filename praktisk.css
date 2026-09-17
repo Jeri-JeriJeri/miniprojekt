@@ -21,9 +21,10 @@ nav a {
 }
 a {
     color: #31587C;
+    text-decoration: none;
     
 }
 a:hover {
-    text-decoration: underline overline;
+    text-decoration: underline;
 }
 
